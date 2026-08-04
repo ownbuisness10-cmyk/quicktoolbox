@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Percentage Calculator</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f4f4f4;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+.container{
+background:#fff;
+padding:25px;
+width:320px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,.2);
+text-align:center;
+}
+h1{color:#2196F3;}
+input{
+width:90%;
+padding:12px;
+margin:10px 0;
+font-size:16px;
+}
+button{
+background:#2196F3;
+color:white;
+border:none;
+padding:12px 20px;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+}
+#result{
+margin-top:20px;
+font-size:20px;
+font-weight:bold;
+color:green;
+}
+a{
+display:block;
+margin-top:20px;
+text-decoration:none;
+color:#2196F3;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Percentage Calculator</h1>
+
+<input type="number" id="obtained" placeholder="Obtained Marks">
+
+<input type="number" id="total" placeholder="Total Marks">
+
+<button onclick="calculatePercentage()">Calculate</button>
+
+<div id="result"></div>
+
+<a href="index.html">⬅ Back to Home</a>
+
+</div>
+
+<script>
+function calculatePercentage(){
+
+let obtained=parseFloat(document.getElementById("obtained").value);
+let total=parseFloat(document.getElementById("total").value);
+
+if(!obtained || !total){
+alert("Please fill all fields");
+return;
+}
+
+let percentage=(obtained/total)*100;
+
+document.getElementById("result").innerHTML=
+"Percentage: "+percentage.toFixed(2)+"%";
+
+}
+</script>
+
+</body>
+</html>
