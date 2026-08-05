@@ -113,7 +113,48 @@ cursor:pointer;
 font-size:16px;
 }
 
-</style>
+.navbar{
+position:sticky;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+background:#1565C0;
+color:white;
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin-left:18px;
+font-size:15px;
+font-weight:500;
+}
+
+.menu a:hover{
+text-decoration:underline;
+}
+
+@media(max-width:600px){
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
+.menu{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+}
+}</style>
 </head>
 
 <body><nav class="navbar">
