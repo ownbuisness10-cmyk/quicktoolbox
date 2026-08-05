@@ -1,20 +1,106 @@
-<div class="container">
-<h1>QuickToolBox</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickToolBox - 100+ Free Online Tools</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f3f8ff;
+}
+
+header{
+background:#2196F3;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+header h1{
+font-size:34px;
+}
+
+header p{
+margin-top:8px;
+font-size:15px;
+}
+
+.search-box{
+width:90%;
+max-width:600px;
+margin:25px auto;
+}
+
+.search-box input{
+width:100%;
+padding:15px;
+border-radius:12px;
+border:2px solid #2196F3;
+font-size:16px;
+outline:none;
+}
+
+.tools{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card button{
+margin-top:15px;
+background:#2196F3;
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>🚀 QuickToolBox</h1>
+
 <p>100+ Free Online Tools</p>
 
-<input type="text" placeholder="🔍 Search Tool">
+</header>
 
-<br><br>
+<div class="search-box">
 
-<button onclick="location.href='age.html'">📅 Age Calculator</button><br><br>
-
-<button onclick="location.href='emi.html'">💰 EMI Calculator</button><br><br>
-
-<button onclick="location.href='bmi.html'">⚖️ BMI Calculator</button><br><br>
-
-<button onclick="location.href='percentage.html'">📊 Percentage Calculator</button><br><br>
-
-<button onclick="location.href='qr.html'">📱 QR Code Generator</button>
+<input type="text" placeholder="🔍 Search Tool...">
 
 </div>
-<button onclick="location.href='password.html'">🔐 Password Generator</button><br><br>
+
+<div class="tools">
